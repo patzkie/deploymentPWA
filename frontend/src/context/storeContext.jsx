@@ -6,7 +6,7 @@ import { car_info as fallbackCarInfo } from "../assets/asset";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-  const url = "http://localhost:4000";
+  const url = "https://deploymentpwa.onrender.com";
   const [token, setToken] = useState("");
   const [car_info, setCarInfo] = useState(fallbackCarInfo);
 
