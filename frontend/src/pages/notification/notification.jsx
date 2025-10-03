@@ -9,7 +9,7 @@ function Notification() {
     const fetchNotifications = async () => {
       try {
         const token = localStorage.getItem("token"); // whatever you store the JWT as
-        const res = await axios.get("http://localhost:4000/api/notification", {
+        const res = await axios.get("https://deploymentpwa.onrender.com/api/notification", {
           headers: { token } // matches your authMiddleware: `const { token } = req.headers;`
         });
         setNotifications(res.data.notifications);
